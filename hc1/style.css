@@ -1,0 +1,68 @@
+/* Clean, Zen-Inspired Styling for Bhakti Tag */
+body {
+  font-family: 'Mukta', 'Noto Sans Devanagari', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  margin: 0;
+  padding: 2em;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 0.2em;
+  color: #b30000;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 1.2em;
+  color: #444;
+}
+
+audio {
+  margin: 1.5em auto;
+  display: block;
+}
+
+#toggle-transliteration {
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid #b30000;
+  background-color: white;
+  color: #b30000;
+  border-radius: 5px;
+}
+
+#chalisa-container {
+  max-width: 600px;
+  margin: 2em auto;
+  padding: 1em;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.line {
+  padding: 0.3em 0;
+  transition: background 0.3s ease;
+}
+
+.line.active {
+  background: #ffeaea;
+  font-weight: bold;
+  color: #b30000;
+}
+
+.transliteration {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 0.2em;
+}
+
+.hidden {
+  display: none;
+}
