@@ -2,15 +2,47 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>राम रसायन पास</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+   <style>
+    body {
+      background: #fff;
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      text-align: center;
+      color: #111;
+      padding: 2em 1em;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1em;
+      margin-bottom: 1.5em;
+    }
+    .audiobox {
+      background: #f5f5f5;
+      padding: 1em;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    audio {
+      width: 100%;
+      outline: none;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1 style="text-align:center;">🔊 राम रसायन पास</h1>
-  <p style="text-align:center;">यह ऑडियो टैग आपके लिए भक्ति का स्रोत है।</p>
-  <audio controls style="display:block; margin: 20px auto;">
-  <source src="chalisa.aac" type="audio/aac">
-  आपका ब्राउज़र ऑडियो प्लेयर को सपोर्ट नहीं करता
-</audio>
+  <h1>🔊 राम रसायन पास</h1>
+  <p>यह ऑडियो टैग आपके लिए राम भक्ति का स्रोत है।</p>
+  <div class="audiobox">
+    <audio controls>
+      <source src="chalisa.aac" type="audio/aac">
+      आपका ब्राउज़र ऑडियो प्लेयर को सपोर्ट नहीं करता।
+    </audio>
+  </div>
 </body>
 </html>
