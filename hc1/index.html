@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>राम रसायन पास</title>
-
-  <!-- CORRECTED PATHS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 class="title">🔊 राम रसायन पास</h1>
-  <p class="subtitle">श्रीहनुमान चालीसा ऑडियो टैग के साथ</p>
 
-  <!-- Audio Player -->
-  <audio id="audio" controls>
-    <source src="v1_ram_ras_309x.aac" type="audio/aac">
-    आपका ब्राउज़र ऑडियो को सपोर्ट नहीं करता
+  <h1>🔱 राम रसायन पास</h1>
+  <p style="text-align:center;">यह ऑडियो टैग आपके लिए श्री हनुमान चालीसा का भक्ति अनुभव है।</p>
+
+  <button id="toggle-transliteration">🔁 Transliteration Toggle</button>
+
+  <audio id="audio" controls preload="auto">
+    <source src="v1_ram_ras_309x.aac" type="audio/aac" />
+    आपका ब्राउज़र ऑडियो प्लेयर को सपोर्ट नहीं करता।
   </audio>
 
-  <!-- Where lines will be rendered -->
-  <div id="chalisa"></div>
+  <div id="chalisa-container"></div>
 
-  <!-- LOAD JSON + SCRIPT CORRECTLY -->
-  <script src="chalisa.json" type="application/json"></script>
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
