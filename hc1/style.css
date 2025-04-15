@@ -84,3 +84,8 @@ audio {
 .hidden {
   display: none;
 }
+
+/* When body has the 'hide-transliteration' class, hide all .transliteration elements */
+.hide-transliteration .transliteration {
+  display: none;
+}
