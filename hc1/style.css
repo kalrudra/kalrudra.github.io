@@ -89,3 +89,10 @@ audio {
 .hide-transliteration .transliteration {
   display: none;
 }
+
+/* optional – highlight colour tweak */
+.line-block.active {
+  background: #fff1f1;
+  font-weight: 600;
+  color: #b30000;
+}
