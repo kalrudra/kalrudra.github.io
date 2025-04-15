@@ -24,6 +24,8 @@ p {
 audio {
   margin: 1.5em auto;
   display: block;
+  width: 100%;
+  max-width: 400px;
 }
 
 #toggle-transliteration {
@@ -43,26 +45,42 @@ audio {
   padding: 1em;
   border-radius: 10px;
   background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: left;
 }
 
-.line {
+/* Each line block for the chalisa */
+.line-block {
   padding: 0.3em 0;
   transition: background 0.3s ease;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.5em;
+}
+.line-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
-.line.active {
+/* Highlight the active line */
+.line-block.active {
   background: #ffeaea;
   font-weight: bold;
   color: #b30000;
 }
 
+/* Devanagari text style */
+.devanagari {
+  font-size: 1.1em;
+}
+
+/* Transliteration style */
 .transliteration {
   font-size: 0.85em;
   color: #555;
   margin-top: 0.2em;
 }
 
+/* Hide class for elements (if needed) */
 .hidden {
   display: none;
 }
