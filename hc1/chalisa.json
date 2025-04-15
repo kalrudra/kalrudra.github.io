@@ -1,0 +1,121 @@
+[
+  { "start": 0.0,   "devanagari": "श्रीगुरु चरन सरोज रज, निज मन मुकुर सुधारि।",          "transliteration": "Shrigur charan saroj raj, nij man mukur sudhār." },
+  { "start": 4.0,   "devanagari": "बरनऊँ रघुवर बिमल जसु, जो दायक फल चारि॥",             "transliteration": "Barnaū̃ Raghubar bimal jasu, jo dāyak phal chāri." },
+
+  { "start": 8.0,   "devanagari": "बुद्धिहीन तनु जानिके, सुमिरौं पवन कुमार।",             "transliteration": "Buddhihīn tanu jānike, sumiraũ Pavan‑Kumār." },
+  { "start": 12.0,  "devanagari": "बल बुद्धि विद्या देहु मोहिं, हरहु कलेस विकार॥",         "transliteration": "Bal buddhi vidyā dehu mohi, harahu kalesh vikār." },
+
+  { "start": 16.0,  "devanagari": "जय हनुमान ज्ञान गुन सागर।",                          "transliteration": "Jai Hanumān jñān gun sāgar." },
+  { "start": 20.0,  "devanagari": "जय कपीस तिहुँ लोक उजागर॥",                           "transliteration": "Jai Kapīs tihũ lok ujāgar." },
+
+  { "start": 24.0,  "devanagari": "राम दूत अतुलित बलधामा।",                             "transliteration": "Rām dūt atulit baladhāmā." },
+  { "start": 28.0,  "devanagari": "अंजनि‑पुत्र पवनसुत नामा॥",                          "transliteration": "Anjani‑putra Pavansut nāmā." },
+
+  { "start": 32.0,  "devanagari": "महाबीर बिक्रम बजरंगी, कुमति निवार सुमति के संगी॥", "transliteration": "Mahābīr bikram bajrangī, kumati nivār sumati ke sangī." },
+  { "start": 36.0,  "devanagari": "कंचन बरन बिराज सुबेसा, कानन कुंडल कुंचित केसा॥",    "transliteration": "Kanchan baran birāj subesā, kānan kuṇḍal kunchit kesā." },
+
+  { "start": 40.0,  "devanagari": "हाथ बज्र औ ध्वजा बिराजै, काँधे मूँज जनेऊ साजै॥",    "transliteration": "Hāth bajr au dhvajā birājai, kā̃dhe mū̃j janeū sājai." },
+  { "start": 44.0,  "devanagari": "शंकर सुवन केसरी नंदन, तेज प्रताप महा जग बन्दन॥",    "transliteration": "Shankar suvan Kesari‑nandan, tej pratāp mahā jag bandan." },
+
+  { "start": 48.0,  "devanagari": "विद्यावान गुनी अति चातुर, राम काज करिबे को आतुर॥",   "transliteration": "Vidyāvān gunī ati chātur, Rām kāj karibe ko ātur." },
+  { "start": 52.0,  "devanagari": "प्रभु चरित्र सुनिबे को रसिया, राम लखन सीता मन बसिया॥", "transliteration": "Prabhu charitra sunibe ko rasiyā, Rām Lakhan Sītā man basiyā." },
+
+  { "start": 56.0,  "devanagari": "सूक्ष्म रूप धरि सियहिं दिखावा।",                      "transliteration": "Sūkṣm rūp dhari Siyahĩ dikhāvā." },
+  { "start": 60.0,  "devanagari": "बिकट रूप धरि लंक जरावा॥",                           "transliteration": "Bikaṭ rūp dhari Lank jarāvā." },
+
+  { "start": 64.0,  "devanagari": "भीम रूप धरि असुर संहारे।",                           "transliteration": "Bhīm rūp dhari asur saṃhāre." },
+  { "start": 68.0,  "devanagari": "रामचन्द्र के काज संवारे॥",                           "transliteration": "Rāmchandra ke kāj saṃvāre." },
+
+  { "start": 72.0,  "devanagari": "लाय सजीवन लखन जियाए।",                              "transliteration": "Lāy sajīvan Lakhan jiyāe." },
+  { "start": 76.0,  "devanagari": "श्री रघुबीर हरषि उर लाए॥",                           "transliteration": "Shri Raghubīr harṣ ur lāe." },
+
+  { "start": 80.0,  "devanagari": "रघुपति कीन्ही बहुत बड़ाई।",                          "transliteration": "Raghupati kīnhī bahut baṛāī." },
+  { "start": 84.0,  "devanagari": "तुम मम प्रिय भरतहि सम भाई॥",                         "transliteration": "Tum mam priy Bharatahi sam bhāī." },
+
+  { "start": 88.0,  "devanagari": "सहस बदन तुम्हरो जस गावैं।",                         "transliteration": "Sahas badan tumharo jas gāvē̃." },
+  { "start": 92.0,  "devanagari": "अस कहि श्रीपति कंठ लगावैं॥",                        "transliteration": "As kahi Shrīpati kaṇṭh lagāvē̃." },
+
+  { "start": 96.0,  "devanagari": "सनकादिक ब्रह्मादि मुनीसा।",                         "transliteration": "Sanakādik Brahmādi munīsā." },
+  { "start": 100.0, "devanagari": "नारद सारद सहित अहीसा॥",                             "transliteration": "Nārad Sārad sahit Ahīsā." },
+
+  { "start": 104.0, "devanagari": "यम कुबेर दिगपाल जहाँ ते।",                           "transliteration": "Yam Kubēr digpāl jahā̃ te." },
+  { "start": 108.0, "devanagari": "कवि कोविद कहि सके कहाँ ते॥",                         "transliteration": "Kavi kovid kahi sake kahā̃ te." },
+
+  { "start": 112.0, "devanagari": "तुम उपकार सुग्रीवहिं कीन्हा।",                        "transliteration": "Tum upkār Sugrīvahĩ kīnhā." },
+  { "start": 116.0, "devanagari": "राम मिलाय राज पद दीन्हा॥",                           "transliteration": "Rām milāy rāj pad dīnhā." },
+
+  { "start": 120.0, "devanagari": "तुम्हरो मंत्र विभीषण माना।",                          "transliteration": "Tumharo mantra Vibhīṣaṇ mānā." },
+  { "start": 124.0, "devanagari": "लंकेश्वर भए सब जग जाना॥",                            "transliteration": "Lankeśvar bhae sab jag jānā." },
+
+  { "start": 128.0, "devanagari": "युग सहस्र योजन पर भानू।",                             "transliteration": "Yug sahasr yojan par bhānū." },
+  { "start": 132.0, "devanagari": "लील्यो ताहि मधुर फल जानू॥",                          "transliteration": "Līlyo tāhi madhur phal jānū." },
+
+  { "start": 136.0, "devanagari": "प्रभु मुद्रिका मेलि मुख माहीं।",                      "transliteration": "Prabhu mudrikā melī mukh māhĩ." },
+  { "start": 140.0, "devanagari": "जलधि लांघि गये अचरज नाहीं॥",                         "transliteration": "Jaladhi lāṅghi gaye acharaj nāhĩ." },
+
+  { "start": 144.0, "devanagari": "दुर्गम काज जगत के जेते।",                            "transliteration": "Durgam kāj jagat ke jete." },
+  { "start": 148.0, "devanagari": "सुगम अनुग्रह तुम्हरे तेते॥",                          "transliteration": "Sugam anugrah tumhare tete." },
+
+  { "start": 152.0, "devanagari": "राम दुआरे तुम रखवारे।",                              "transliteration": "Rām duāre tum rakhvāre." },
+  { "start": 156.0, "devanagari": "होत न आज्ञा बिनु पैसारे॥",                           "transliteration": "Hot na ājñā binu paisāre." },
+
+  { "start": 160.0, "devanagari": "सब सुख लहै तुम्हारी सरना।",                          "transliteration": "Sab sukh lahai tumhārī sarnā." },
+  { "start": 164.0, "devanagari": "तुम रक्षक काहू को डरना॥",                             "transliteration": "Tum rakṣak kāhū ko ḍarnā." },
+
+  { "start": 168.0, "devanagari": "आपन तेज सम्हारो आपै।",                               "transliteration": "Āpan tej samhāro āpai." },
+  { "start": 172.0, "devanagari": "तीनों लोक हाँक तें काँपै॥",                            "transliteration": "Tīnõ lok hā̃k tẽ kā̃pai." },
+
+  { "start": 176.0, "devanagari": "भूत पिशाच निकट नहिं आवै।",                            "transliteration": "Bhūt piśāch nikat nahĩ āvai." },
+  { "start": 180.0, "devanagari": "महाबीर जब नाम सुनावै॥",                               "transliteration": "Mahābīr jab nām sunāvai." },
+
+  { "start": 184.0, "devanagari": "नासै रोग हरै सब पीरा।",                              "transliteration": "Nāsae rog harai sab pīrā." },
+  { "start": 188.0, "devanagari": "जपत निरंतर हनुमत बीरा॥",                             "transliteration": "Japat nirantar Hanumat bīrā." },
+
+  { "start": 192.0, "devanagari": "संकट तें हनुमान छुड़ावै।",                            "transliteration": "Saṅkaṭ tẽ Hanumān chuḍāvai." },
+  { "start": 196.0, "devanagari": "मन क्रम बचन ध्यान जो लावै॥",                          "transliteration": "Man kram vachan dhyān jo lāvai." },
+
+  { "start": 200.0, "devanagari": "सब पर राम तपस्वी राजा।",                              "transliteration": "Sab par Rām tapasvī rājā." },
+  { "start": 204.0, "devanagari": "तिन के काज सकल तुम साजा॥",                            "transliteration": "Tin ke kāj sakal tum sājā." },
+
+  { "start": 208.0, "devanagari": "और मनोरथ जो कोई लावै।",                               "transliteration": "Aur manorath jo koī lāvai." },
+  { "start": 212.0, "devanagari": "सोइ अमित जीवन फल पावै॥",                             "transliteration": "Soī amit jīvan phal pāvai." },
+
+  { "start": 216.0, "devanagari": "चारों जुग परताप तुम्हारा।",                            "transliteration": "Chārõ yug pratāp tumhārā." },
+  { "start": 220.0, "devanagari": "है प्रसिद्ध जगत उजियारा॥",                            "transliteration": "Hai prasiddh jagat ujiyārā." },
+
+  { "start": 224.0, "devanagari": "साधु संत के तुम रखवारे।",                              "transliteration": "Sādhu sant ke tum rakhvāre." },
+  { "start": 228.0, "devanagari": "असुर निकंदन राम दुलारे॥",                              "transliteration": "Asur nikandan Rām dulāre." },
+
+  { "start": 232.0, "devanagari": "अष्ट सिद्धि नव निधि के दाता।",                         "transliteration": "Aṣṭ siddhi nav nidhi ke dātā." },
+  { "start": 236.0, "devanagari": "अस बर दीन जानकी माता॥",                               "transliteration": "As bar dīn Jānakī mātā." },
+
+  { "start": 240.0, "devanagari": "राम रसायन तुम्हरे पासा।",                              "transliteration": "Rām rasāyan tumhare pāsā." },
+  { "start": 244.0, "devanagari": "सदा रहो रघुपति के दासा॥",                              "transliteration": "Sadā raho Raghupati ke dāsā." },
+
+  { "start": 248.0, "devanagari": "तुम्हरे भजन राम को पावै।",                             "transliteration": "Tumhare bhajan Rām ko pāvai." },
+  { "start": 252.0, "devanagari": "जनम‑जनम के दुख बिसरावै॥",                             "transliteration": "Janam‑janam ke dukh bisarāvai." },
+
+  { "start": 256.0, "devanagari": "अंतकाल रघुबर पुर जाई।",                                "transliteration": "Antkāl Raghubar pur jāī." },
+  { "start": 260.0, "devanagari": "जहाँ जन्म हरि‑भक्त कहाई॥",                             "transliteration": "Jahā̃ janm Hari‑bhakt kahāī." },
+
+  { "start": 264.0, "devanagari": "और देवता चित्त न धरई।",                                "transliteration": "Aur devtā chitt na dharai." },
+  { "start": 268.0, "devanagari": "हनुमत सेइ सर्व सुख करई॥",                              "transliteration": "Hanumat sei sarv sukh karai." },
+
+  { "start": 272.0, "devanagari": "संकट कटै मिटै सब पीरा।",                               "transliteration": "Saṅkaṭ kaṭai miṭai sab pīrā." },
+  { "start": 276.0, "devanagari": "जो सुमिरै हनुमत बलबीरा॥",                             "transliteration": "Jo sumirai Hanumat balbīrā." },
+
+  { "start": 280.0, "devanagari": "जय जय जय हनुमान गोसाईं।",                              "transliteration": "Jai Jai Jai Hanumān Gosāī̃." },
+  { "start": 284.0, "devanagari": "कृपा करहु गुरुदेव की नाईं॥",                           "transliteration": "Kṛpā karahu Gurudev kī nāī̃." },
+
+  { "start": 288.0, "devanagari": "जो सत बार पाठ कर कोई।",                                "transliteration": "Jo sat bār pāṭh kar koī." },
+  { "start": 292.0, "devanagari": "छूटहि बंदि महा सुख होई॥",                              "transliteration": "Chūṭahi bandi mahā sukh hoī." },
+
+  { "start": 296.0, "devanagari": "जो यह पढ़ै हनुमान चालीसा।",                              "transliteration": "Jo yah paṛhai Hanumān Chālīsā." },
+  { "start": 300.0, "devanagari": "होय सिद्धि साखी गौरीसा॥",                              "transliteration": "Hoy siddhi sākhī Gaurīsā." },
+
+  { "start": 304.0, "devanagari": "तुलसीदास सदा हरि चेरा।",                               "transliteration": "Tulsīdās sadā Hari cherā." },
+  { "start": 308.0, "devanagari": "कीजै नाथ हृदय महँ डेरा॥",                               "transliteration": "Kījai Nāth hṛday mah̃ ḍerā." },
+
+  { "start": 312.0, "devanagari": "पवन‑तनय संकट हरन, मंगल मूरति रूप।",                    "transliteration": "Pavan‑tanay saṅkaṭ haran, maṅgal mūrati rūp." },
+  { "start": 316.0, "devanagari": "राम लखन सीता सहित, हृदय बसहु सुर भूप॥",                "transliteration": "Rām Lakhan Sītā sahit, hṛday basahu Sur‑Bhūp." }
+]
