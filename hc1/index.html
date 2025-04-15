@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>🕉️ राम रसायन पास</title>
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -21,23 +20,28 @@
     आपका ब्राउज़र ऑडियो प्लेयर को सपोर्ट नहीं करता।
   </audio>
 
-  <!-- Dynamic Chalisa lines will render here -->
+  <!-- Container for Chalisa couplets -->
   <div id="chalisa-container"></div>
 
-  <!-- JS to sync audio + text -->
+  <!-- JS to sync audio and text -->
   <script>
     document.addEventListener("DOMContentLoaded", async () => {
       const audio     = document.getElementById("audio");
       const container = document.getElementById("chalisa-container");
       const toggleBtn = document.getElementById("toggle-transliteration");
 
-      // Transliteration toggle
+      // Adjustable sync offset (in seconds)
+      // If the text is highlighting too far ahead, increase the offset.
+      // In this example, an offset of 12 seconds is set.
+      const syncOffset = 12; 
+
+      // Toggle transliteration visibility
       toggleBtn.addEventListener("click", () => {
         const hidden = document.body.classList.toggle("hide-transliteration");
         toggleBtn.textContent = hidden ? "🔁 Show Transliteration" : "🔁 Hide Transliteration";
       });
 
-      // Load Chalisa lines
+      // Load the Chalisa couplets from JSON
       let lines = [];
       try {
         const resp = await fetch("chalisa.json");
@@ -49,11 +53,11 @@
         return;
       }
 
-      // Render the couplets
+      // Render all couplets with their respective timings
       lines.forEach(line => {
         const div = document.createElement("div");
         div.className     = "line-block";
-        div.dataset.start = line.start;
+        div.dataset.start = line.start;  // start time in seconds from JSON
         div.innerHTML = `
           <div class="devanagari">${line.devanagari}</div>
           <div class="transliteration">${line.transliteration}</div>
@@ -63,16 +67,22 @@
 
       const blocks = [...document.querySelectorAll(".line-block")];
 
-      // Audio sync with karaoke highlight
+      // Sync the highlighted couplet to the adjusted audio time
       audio.addEventListener("timeupdate", () => {
-        const t = audio.currentTime;
+        // Subtract the offset from the current audio time for better sync.
+        const adjustedTime = audio.currentTime - syncOffset;
+        
+        // Find the index of the current block where:
+        // adjustedTime is >= block start AND less than next block's start.
         const idx = blocks.findIndex((b, i) =>
-          t >= +b.dataset.start &&
-          t < (+blocks[i + 1]?.dataset.start ?? Infinity)
+          adjustedTime >= +b.dataset.start &&
+          adjustedTime < (+blocks[i + 1]?.dataset.start ?? Infinity)
         );
         if (idx === -1) return;
 
+        // Remove highlighting from any previously active block.
         document.querySelectorAll(".active").forEach(el => el.classList.remove("active"));
+        // Highlight the current block and scroll it into view.
         blocks[idx].classList.add("active");
         blocks[idx].scrollIntoView({ behavior: "smooth", block: "center" });
       });
