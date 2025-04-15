@@ -1,50 +1,50 @@
+// script.js  – drop‑in replacement
 document.addEventListener("DOMContentLoaded", async () => {
-  const audio = document.getElementById("audio");
+  const audio     = document.getElementById("audio");
   const container = document.getElementById("chalisa-container");
-  const toggle = document.getElementById("toggle-transliteration");
-  let lines = [];
+  const toggleBtn = document.getElementById("toggle-transliteration");
 
-  // Load the chalisa JSON file
-  try {
-    const response = await fetch("chalisa.json");
-    lines = await response.json();
-  } catch (e) {
-    container.innerHTML = "<p>⚠️ chalisa.json लोड नहीं हो पाया।</p>";
-    return;
-  }
-
-  // Render all lines using the keys "devanagari" and "transliteration"
-  for (const line of lines) {
-    const div = document.createElement("div");
-    div.className = "line-block";
-    div.dataset.start = line.start;
-    div.innerHTML = `
-      <div class="devnagari">${line.devanagari}</div>
-      <div class="transliteration">${line.transliteration}</div>
-    `;
-    container.appendChild(div);
-  }
-
-  // Toggle transliteration visibility
-  toggle.addEventListener("click", () => {
-    document.body.classList.toggle("hide-transliteration");
+  /* ----------  A. Transliteration toggle (always wired‑up) ---------- */
+  toggleBtn.addEventListener("click", () => {
+    const hidden = document.body.classList.toggle("hide-transliteration");
+    toggleBtn.textContent = hidden ? "🔁 Show Transliteration" : "🔁 Hide Transliteration";
   });
 
-  // Sync highlighting: find the last line whose start time is <= current audio time
+  /* ----------  B. Load couplet timing table ---------- */
+  let lines = [];
+  try {
+    const resp = await fetch("chalisa.json");
+    if (!resp.ok) throw new Error(resp.status);
+    lines = await resp.json();
+  } catch (err) {
+    container.innerHTML = "<p>⚠️ chalisa.json लोड नहीं हो पाया।</p>";
+    console.error(err);
+  }
+
+  /* ----------  C. Render couplets ---------- */
+  lines.forEach(l => {
+    const div = document.createElement("div");
+    div.className     = "line-block";
+    div.dataset.start = l.start;                     // seconds
+    div.innerHTML = `
+      <div class="devanagari">${l.devanagari}</div>
+      <div class="transliteration">${l.transliteration}</div>`;
+    container.appendChild(div);
+  });
+  const blocks = [...container.querySelectorAll(".line-block")];
+
+  /* ----------  D. Karaoke‑style highlight + auto‑scroll ---------- */
   audio.addEventListener("timeupdate", () => {
-    const currentTime = audio.currentTime;
-    const blocks = document.querySelectorAll(".line-block");
-    let activeBlock = null;
-    blocks.forEach(el => {
-      const start = parseFloat(el.dataset.start);
-      if (start <= currentTime) {
-        activeBlock = el;
-      }
-    });
-    // Remove previous highlight
-    document.querySelectorAll(".highlight").forEach(e => e.classList.remove("highlight"));
-    if (activeBlock) {
-      activeBlock.classList.add("highlight");
-    }
+    const t = audio.currentTime;
+    // locate the current couplet (start ≤ t < nextStart)
+    const idx = blocks.findIndex((b, i) =>
+      t >= +b.dataset.start &&
+      t < (+blocks[i + 1]?.dataset.start ?? Infinity)
+    );
+    if (idx === -1) return;
+
+    document.querySelectorAll(".active").forEach(el => el.classList.remove("active"));
+    blocks[idx].classList.add("active");
+    blocks[idx].scrollIntoView({ behavior: "smooth", block: "center" });
   });
 });
